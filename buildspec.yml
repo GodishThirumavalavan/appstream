@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.x
+      nodejs: 14.x
+    commands:
+      - echo "Installing AWS CLI..."
+      - pip install awscli
+  build:
+    commands:
+      - echo "Starting Image Builder process..."
+      - chmod +x build-image.sh
+      - ./build-image.sh
+
+artifacts:
+  files:
+    - '**/*'
