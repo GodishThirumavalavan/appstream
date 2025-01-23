@@ -3,7 +3,7 @@
 # Parameters
 IMAGE_BUILDER_NAME="automated-appstream"
 INSTANCE_TYPE="stream.standard.large"
-BASE_IMAGE_NAME="AppStream-WinServer2016-10-22-2024 (Public)"
+BASE_IMAGE_NAME="AppStream-WinServer2016-06-17-2024"
 IAM_ROLE_ARN="arn:aws:iam::690797694046:role/appseteam-automation"
 #DIRECTORY_NAME="godingreen1.com"
 #OU_DISTINGUISHED_NAME="OU=AWS Reserved,DC=godingreen1,DC=com"
