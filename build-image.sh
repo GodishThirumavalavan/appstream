@@ -1,4 +1,4 @@
-//#!/bin/bash
+#!/bin/bash
 
 # Parameters
 #IMAGE_BUILDER_NAME="automated-appstream"
@@ -35,7 +35,6 @@
 #aws appstream create-image --name "$CUSTOM_IMAGE_NAME" --image-builder-name "$IMAGE_BUILDER_NAME"
 
 #echo "Custom Image creation initiated: $CUSTOM_IMAGE_NAME" 
-#!/bin/bash
 
 # Parameters
 IMAGE_BUILDER_NAME="automated-appstream"
