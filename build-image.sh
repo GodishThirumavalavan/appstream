@@ -41,8 +41,8 @@ IMAGE_BUILDER_NAME="automated-appstream"
 INSTANCE_TYPE="stream.standard.large"
 BASE_IMAGE_NAME="AppStream-WinServer2016-06-17-2024"
 IAM_ROLE_ARN="arn:aws:iam::690797694046:role/appseteam-automation"
-DIRECTORY_NAME="goodin.com"
-OU_DISTINGUISHED_NAME="OU=AWS Reserved,DC=goodin,DC=com"
+#DIRECTORY_NAME="goodin.com"
+#OU_DISTINGUISHED_NAME="OU=AWS Reserved,DC=goodin,DC=com"
 VPC_ID="vpc-7179bb1a"
 SUBNET_ID="subnet-0fb5735fa5d14f1b3"
 SECURITY_GROUP_ID="sg-025ddc4b02bb53af5"
@@ -54,7 +54,7 @@ aws appstream create-image-builder \
   --instance-type "$INSTANCE_TYPE" \
   --image-name "$BASE_IMAGE_NAME" \
   --iam-role-arn "$IAM_ROLE_ARN" \
-  --domain-join-info "{\"DirectoryName\":\"$DIRECTORY_NAME\",\"OrganizationalUnitDistinguishedName\":\"$OU_DISTINGUISHED_NAME\"}" \
+ # --domain-join-info "{\"DirectoryName\":\"$DIRECTORY_NAME\",\"OrganizationalUnitDistinguishedName\":\"$OU_DISTINGUISHED_NAME\"}" \
   --vpc-config "{\"SubnetIds\":[\"$SUBNET_ID\"],\"SecurityGroupIds\":[\"$SECURITY_GROUP_ID\"]}" \
   --enable-default-internet-access
 
