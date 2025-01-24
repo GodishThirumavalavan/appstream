@@ -20,8 +20,8 @@ aws appstream create-image-builder \
   --iam-role-arn "$IAM_ROLE_ARN" \
   --domain-join-info "{\"DirectoryName\":\"$DIRECTORY_NAME\",\"OrganizationalUnitDistinguishedName\":\"$OU_DISTINGUISHED_NAME\"}"
   --vpc-id "$VPC_ID" \
-  --subnet-id "$SUBNET_ID" 
-  --security-group-ids "$SECURITY_GROUP_ID" 
+  --subnet-id "$SUBNET_ID" \
+  --security-group-ids "$SECURITY_GROUP_ID" \
   --enable-default-internet-access "$ENABLE_INTERNET_ACCESS"
 
 # Wait for the image builder to become available
